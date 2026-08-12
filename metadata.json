@@ -1,0 +1,6 @@
+{
+  "name": "HH Goa 2026 ID Generator",
+  "description": "Create your unique Hacker House Goa 2026 Builder ID Card or PFP Frame.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

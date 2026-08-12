@@ -1,0 +1,38 @@
+{
+  "collections": {
+    "builder_ids": {
+      "description": "Stores generated Builder IDs for HH Goa 2026",
+      "fields": {
+        "uniqueId": "string",
+        "fullName": "string",
+        "bio": "string",
+        "location": "string",
+        "photoBase64": "string",
+        "status": "string",
+        "createdAt": "timestamp"
+      },
+      "rules": [
+        {
+          "type": "read",
+          "condition": "true",
+          "description": "Anyone can read an ID to verify it"
+        },
+        {
+          "type": "create",
+          "condition": "true",
+          "description": "Anyone can create a new ID from the generator"
+        },
+        {
+          "type": "update",
+          "condition": "false",
+          "description": "No updates allowed from client"
+        },
+        {
+          "type": "delete",
+          "condition": "false",
+          "description": "No deletes allowed from client"
+        }
+      ]
+    }
+  }
+}

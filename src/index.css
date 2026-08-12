@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+@import "@fontsource/plus-jakarta-sans/800.css";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  
+  --color-hh-cream: #FDFBF7;
+  --color-hh-cream-dark: #F3EFE6;
+  --color-hh-green-dark: #0A2E1F;
+  --color-hh-green-tropical: #1B4D35;
+  --color-hh-green-light: #4A8B63;
+  --color-hh-yellow: #FFD166;
+  --color-hh-yellow-light: #FFE082;
+  --color-hh-orange: #E07A5F;
+  --color-hh-pink: #EF476F;
+}
+
+body {
+  background-color: var(--color-hh-cream);
+  color: var(--color-hh-green-dark);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+}
+
+/* Custom scrollbar for a nicer feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-hh-green-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hh-green-tropical);
+}
